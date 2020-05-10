@@ -24,7 +24,7 @@ footer{
 .set{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 10% auto;
 }
 
@@ -81,4 +81,12 @@ background-image: url('images/kick.png')
 .pressed{
   box-shadow: 0 3px 4px white;
   opacity: 0.5;
+}
+
+/*------------------------------------------------------------Media Query---------------------------------------------------*/
+@media (max-width: 1000px){
+
+  .set{
+    max-width: 60%;
+  }
 }
