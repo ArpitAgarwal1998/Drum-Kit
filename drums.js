@@ -1,6 +1,7 @@
 buttons = document.querySelectorAll('.btn');
 for( let value of buttons){
   value.addEventListener("mousedown",function(){
+    alert(this.textContent);
     makeSound(this.textContent);
     displayAnimation(this.textContent);
   });
