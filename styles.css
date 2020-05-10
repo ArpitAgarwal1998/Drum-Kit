@@ -75,3 +75,10 @@ background-image: url('images/crash.png')
 .l{
 background-image: url('images/kick.png')
 }
+
+
+/*-------------------------------------------------------------Animation---------------------------------------------------*/
+.pressed{
+  box-shadow: 0 3px 4px white;
+  opacity: 0.5;
+}
