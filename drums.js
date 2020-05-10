@@ -1,6 +1,6 @@
 buttons = document.querySelectorAll('.btn');
 for( let value of buttons){
-  value.addEventListener("mousedown",function(){
+  value.addEventListener("click",function(){
     makeSound(this.textContent);
     displayAnimation(this.textContent);
   });
@@ -11,9 +11,9 @@ document.addEventListener('keypress',function(event){
   displayAnimation(event.key);
 });
 
-document.addEventListener('touchstart',function(){
-  alert(this.textContent);
-});
+// document.addEventListener('touchstart',function(){
+//   alert(this.textContent);
+// });
 function makeSound(val) {
   switch(val){
     case 'w': audio = new Audio('sounds/tom-1.mp3');
